@@ -1,0 +1,81 @@
+@use 'w3.css';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+$text_color: #fff4f2;
+$link_color: #e4fff7;
+$blue_bg: #031927;
+$red_bg:  #5B0F0B;
+$alt_red: #D01137;
+
+
+@for $index from 1 through 6 
+{
+    h#{$index}
+    {
+        @extend .w3-center;
+        color: $text_color;
+        font-family: 'Bebas Neue', sans-serif;
+    }
+}
+
+p
+{
+    color: $text_color;
+    font-size: 14pt;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+#body
+{
+    background-color: $blue_bg;
+}
+
+#top_bar
+{
+    :hover
+    {
+        color: $link_color;
+    }
+
+    a:link
+    {
+        text-decoration: none;
+    }
+    
+    font-size: 4.5vw;
+
+}
+
+#hidden_parts
+{
+    background-color: darken( $blue_bg, 5% );
+    padding-top: 1rem;
+}
+
+#footer
+{
+    @extend .w3-center;
+    @extend .w3-container;
+    background-color: darken( $blue_bg, 10% );
+}
+
+#portfolio
+{
+    h2
+    {
+        font-size: 3.5vw;
+    }
+}
+
+.spotify_small
+{
+    padding: 2rem;
+    width: 22rem;
+    height: auto;
+}
+
+.gallery
+{
+    @extend .w3-center;
+}
+
