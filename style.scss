@@ -59,22 +59,37 @@ p
     background-color: darken( $blue_bg, 10% );
 }
 
-#portfolio
-{
-    h2
-    {
-        font-size: 3.5vw;
-    }
-}
-
-.spotify_small
+%spotify_small
 {
     padding: 2rem;
     width: 22rem;
     height: auto;
 }
 
-.gallery
+#portfolio
+{
+    h2
+    {
+        font-size: 3.5vw;
+    }
+
+    a:hover
+    {
+        color: $link_color;
+    }
+
+    a:link
+    {
+        text-decoration: none;
+    }
+
+    img
+    {
+        @extend %spotify_small;
+    }
+}
+
+#gallery
 {
     @extend .w3-center;
 }

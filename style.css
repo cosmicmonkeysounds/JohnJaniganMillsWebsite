@@ -489,7 +489,7 @@ a {
   overflow: hidden;
 }
 
-.w3-center .w3-bar, h1 .w3-bar, h2 .w3-bar, h3 .w3-bar, h4 .w3-bar, h5 .w3-bar, h6 .w3-bar, #footer .w3-bar, .gallery .w3-bar {
+.w3-center .w3-bar, h1 .w3-bar, h2 .w3-bar, h3 .w3-bar, h4 .w3-bar, h5 .w3-bar, h6 .w3-bar, #footer .w3-bar, #gallery .w3-bar {
   display: inline-block;
   width: auto;
 }
@@ -523,7 +523,7 @@ a {
   outline: 0;
 }
 
-.w3-bar-block.w3-center .w3-bar-item, h1.w3-bar-block .w3-bar-item, h2.w3-bar-block .w3-bar-item, h3.w3-bar-block .w3-bar-item, h4.w3-bar-block .w3-bar-item, h5.w3-bar-block .w3-bar-item, h6.w3-bar-block .w3-bar-item, .w3-bar-block#footer .w3-bar-item, .w3-bar-block.gallery .w3-bar-item {
+.w3-bar-block.w3-center .w3-bar-item, h1.w3-bar-block .w3-bar-item, h2.w3-bar-block .w3-bar-item, h3.w3-bar-block .w3-bar-item, h4.w3-bar-block .w3-bar-item, h5.w3-bar-block .w3-bar-item, h6.w3-bar-block .w3-bar-item, .w3-bar-block#footer .w3-bar-item, .w3-bar-block#gallery .w3-bar-item {
   text-align: center;
 }
 
@@ -1203,7 +1203,7 @@ a {
   text-align: justify !important;
 }
 
-.w3-center, h1, h2, h3, h4, h5, h6, #footer, .gallery {
+.w3-center, h1, h2, h3, h4, h5, h6, #footer, #gallery {
   text-align: center !important;
 }
 
@@ -1780,14 +1780,20 @@ p {
   background-color: black;
 }
 
-#portfolio h2 {
-  font-size: 3.5vw;
-}
-
-.spotify_small {
+#portfolio img {
   padding: 2rem;
   width: 22rem;
   height: auto;
+}
+
+#portfolio h2 {
+  font-size: 3.5vw;
+}
+#portfolio a:hover {
+  color: #e4fff7;
+}
+#portfolio a:link {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
