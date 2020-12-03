@@ -5,7 +5,7 @@ const topBarButtonsClicked =
     'about' : false,
     'portfolio' : false,
     'theory' : false,
-    'misc' : false,
+    //'misc' : false,
     'contact': false
 }
 

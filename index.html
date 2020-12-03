@@ -18,12 +18,11 @@
 
     <h2 id="top_bar"> 
         <a id="portfolio_btn" onclick="topBarClicked('portfolio')">portfolio</a> &nbsp / &nbsp 
-        <a id="about_btn" onclick="topBarClicked('about')">about me</a> &nbsp / &nbsp 
-        <a id="theory_btn" onclick="topBarClicked('theory')">theory app</a>  &nbsp / &nbsp  
-        <a id="misc_btn" onclick="topBarClicked('misc')">misc</a>  &nbsp / &nbsp  
+        <a id="about_btn" onclick="topBarClicked('about')">about</a> &nbsp / &nbsp 
+        <a id="theory_btn" href="theory_app/music-theory.html">theory app</a>  &nbsp / &nbsp  
+        <!-- <a id="misc_btn" onclick="topBarClicked('misc')">misc</a>  &nbsp / &nbsp   -->
         <a id="contact_btn" onclick="topBarClicked('contact')">contact</a>
     </h2>
-
 
     <section id="hidden_parts">
 
@@ -63,19 +62,92 @@
         </div>
 
         <div id="about" style="display: none;">
-            <h2>DOOOI</h2>
+
+            <h3><b>strangeness is neither earned nor learned, it's a gift of luck.</b></h3>
+
+            <p>
+                
+                <img class="w3-right" style="padding-left: 2rem" src="photos/boneNbass.jpg">
+
+                for many reasons, I am very lucky, and throughout this strange journey
+                I have accrued many skills, passions, and curiosities in the fields of music, engineering, and the innumerable combinations thereof. <br><br>
+    
+                born and raised in rural Nova Scotia to music loving parents, I grew up listening to classic rock staples on the radio and turntable,
+                leading to me buying a guitar on my 10th birthday. within a few years, playing guitar had comsumed my life, and when junior high came around,
+                band class was the obvious choice over study hall. as well as picking up the trombone and bass, composition and recording quickly became part of my passion, 
+                I quickly taught myself software like Finale and Cubase and arranged the Brinstar Depths theme from Super Metroid for the school concert band at age 14, and started recording my own songs around the same age. <br><br>
+
+                after a successful tour through my high school's jazz program, winning awards for best soloist in the Atlantic Band Festival and developing my own local bands,
+                my music led me into a four semester stint as a jazz composition / electronic production double major at Berklee College of Music (Boston, MA) with a partial scholarship,
+                and after that, my heart led me into the world of analog electronics due to my love of stompboxes and synthesizers. after a semester at Dalhousie (Halifax, NS) in their engineering program,
+                I discovered my love for computer programming and decided to strike out on my own, taking my learning into my own hands. <br><br>
+
+                <img class="w3-left" style="padding-right: 2rem" src="photos/musicroombass.jpg">
+
+                as of now, I am the owner of <a href="http://cosmicmonkeysounds.com">Cosmic Monkey Sounds</a>, where I've made a few original stompbox designs,
+                and am in the process of a complete make over, incorporating microcontrollers and DSP into analog circuits for true hybrid designs, such
+                as touch screen pedals and amps, as well as taking my first steps in developing plugins with the C++ framework  JUCE. <br><br>
+    
+                musically, I consider myself a chameleon, having love for just about every musical genre, from Tribe Called Quest to Kendrick Lamar, Charlie Parker to Tigran Hamasyan,
+                J.S. Bach to Arnold Schoenberg, Whitney Houston to Carly Rae Jepsen, Ornette Coleman to John Zorn, Black Sabbath to The Dillenger Escape Plan, Cat Stevens to Bon Iver,
+                Kraftwerk to Venetian Snares, this list could go on and on. <br><br>
+    
+                whether you are in need of a sideman to play bass, drums, keyboards, or guitars in your musical projects, have an itch for
+                a creative composer, producer, or engineer to help realize your own music, whether that means writing for large jazz or classical ensembles,
+                capturing, mixing, or mastering your latest bedroom EP, or creating unique sounds and scores for your visual projects, or maybe you need a website, algorithm, or piece of hardware / software created for your distinct needs,
+                my diverse range of skills are yours to be utilized in timely, respectful manner.
+            </p>
+
+            
         </div>
 
         <div id="theory" style="display: none;">
-            <h2>burp</h2>
+            
         </div>
 
         <div id="misc" style="display: none;">
             <h2>asd</h2>
         </div>
 
-        <div id="contact" style="display: none;">
-            <h2>titz</h2>
+        <div id="contact" class="w3-center" style="display: none;">
+
+            <div class="fcf-body">
+
+                <div id="fcf-form">
+                <h3 class="fcf-h3">Contact me!</h3>
+            
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                    
+                    <div class="">
+                        <p for="Name" class="fcf-label">Your name</p>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <p for="Email" class="fcf-label">Your email address</p>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <p for="Message" class="fcf-label">Your message</p>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                    </div>
+            
+                </form>
+                </div>
+            
+            </div>
+            
         </div>
 
     </section>
