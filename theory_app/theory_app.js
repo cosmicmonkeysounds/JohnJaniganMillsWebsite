@@ -6,8 +6,7 @@ function setup()
     canvas = createCanvas( windowWidth, windowHeight );
    
     // attaches canvas to a .div in the HTML
-    canvas.parent( 'theory' );
-    circle = new ModCircle(12);
+    canvas.parent( 'spiral' );
 
 }
 
@@ -19,5 +18,5 @@ function windowResized()
 function draw()
 {
     background(150);
-    circle.animate();
+    
 }
