@@ -2,11 +2,8 @@
 
 const topBarButtonsClicked =
 {
-    'about' : false,
     'portfolio' : false,
-    'theory' : false,
-    //'misc' : false,
-    'contact': false
+    'theory' : false
 }
 
 function topBarClicked(name)
