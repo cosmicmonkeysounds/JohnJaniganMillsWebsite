@@ -3,17 +3,22 @@
 const topBarButtonsClicked =
 {
     'portfolio' : false,
-    'theory' : false
+    'code': false,
+    'about' : false,
+    'contact': false
 }
 
 function topBarClicked(name)
 {
+    console.log(name);
     topBarButtonsClicked[name] = true;
     document.getElementById(name).style.display = "inline";
     document.getElementById(name.concat("_btn")).style.textDecoration = "underline";
 
     for( let key in topBarButtonsClicked )
     {
+        console.log(key);
+        console.log(document.getElementById(key.concat("_btn")));
         if( key != name )
         {          
             topBarButtonsClicked[key] = false;
